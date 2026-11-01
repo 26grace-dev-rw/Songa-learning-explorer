@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #20243a;
+    background: #f3f5fb;
+}
+header {
+    background-color: #202653;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+header p {
+    margin: 0;
+}
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.controls {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.controls label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.controls input,
+.controls select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.progress {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.progress p {
+    margin: 0;
+}
+#resource-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.resource-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.resource-card h2 {
+    color: #202653;
+    margin-top: 0;
+}
+.resource-category {
+    display: inline-block;
+    background-color: #e9ecff;
+    color: #202653;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.resource-discription {
+    margin: 15px 0;
+}
+.completion-status {
+    font-weight: bold;
+}
+.completed {
+    color: green;
+}
+.incomplete {
+    color: #a65b00;
+}
+.resource-card button {
+    background-color: #3445a5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.resource-card button:hover {
+    background-color: #202653;
+}
+#empty-message {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+@media(max-width: 650px) {
+    main {
+        width: 95%;
+    }
+    #resource-list {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+}
